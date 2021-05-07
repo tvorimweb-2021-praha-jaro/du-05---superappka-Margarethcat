@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Mobilní aplikace</title>
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div class="obal">
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <title>Mobilní aplikace</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="obal">
 
-            <!-- tvoje HTML sem -->
+    <nav class="navbar">
+        <a href="#" class="navbar-item active">Super appka</a>
+        <a href="#" class="navbar-item">Úžasný design</a>
+        <a href="#" class="navbar-item">Boží funkce</a>
+        <a href="#" class="navbar-item">Zdarma ke stažení</a>
+    </nav>
 
-            Ajajaj, tento týden tu nic není, je to zcela na tobě :)
+    <header class="banner">
+        <span class="title">Super appka</span>
+        <span class="subtitle">Úžasná mobilní aplikace,<br>která Ti změní život.</span>
+        <div class="buttons">
+            <button class="button primary">Stáhnout zdarma</button>
+            <button class="button secondary">Více informací</button>
+        </div>
+        <img src="./images/telefon.png" alt="Ruka s telefonem" class="phone">
+    </header>
 
-            Zadání ve vysledek.png
+    <main>
+        <div class="columns">
+            <article class="column">
+                <img src="./images/letadlo.svg" alt="Letadlo" class="icon">
+                <span class="title">Cestuj po světě</span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis
+                    corporis ipsa eveniet deleniti.
+                </p>
+            </article>
+            <article class="column">
+                <img src="./images/bubliny.svg" alt="Bubliny" class="icon">
+                <span class="title">Chatuj s přáteli</span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis
+                    corporis ipsa eveniet deleniti.
+                </p>
+            </article>
+            <article class="column">
+                <img src="./images/mapa.svg" alt="Mapa" class="icon">
+                <span class="title">Zažij dobrodružství</span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, perferendis maxime quisquam cum ut nobis
+                    corporis ipsa eveniet deleniti.
+                </p>
+            </article>
+        </div>
+    </main>
 
+    <footer class="footer">
+        <span>&#169;2016, Web od A do Z</span>
+    </footer>
 
-
-
-        </div><!-- konec .obal -->
-    </body>
+</div><!-- konec .obal -->
+</body>
 </html>
