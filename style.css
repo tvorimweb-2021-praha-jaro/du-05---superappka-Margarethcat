@@ -49,6 +49,11 @@ body {
     justify-content: center;
 }
 
+.navbar-item:hover {
+    background-color: #48418e;
+    color: white;
+}
+
 .active {
     text-transform: uppercase;
     font-weight: bold;
@@ -97,9 +102,19 @@ body {
     background-color: #48418e;
 }
 
+.button.primary:hover {
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
 .button.secondary {
     background-color: transparent;
     margin-left: 1.5rem;
+}
+
+.button.secondary:hover {
+    background-color: #48418e;
+    border: 1px solid #48418e;
 }
 
 .phone {
@@ -138,4 +153,58 @@ body {
     justify-content: center;
     padding: .5rem 0;
     font-size: 10pt;
+}
+
+@media(max-width: 960px) {
+    .obal {
+        width: 100%;
+    }
+}
+
+@media(max-width: 910px) {
+    .phone {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .navbar-item {
+        padding: .5rem;
+    }
+
+    .banner .title {
+        font-size: 32pt;
+        text-transform: capitalize;
+        margin-bottom: .25rem;
+    }
+
+    .banner .subtitle {
+        font-size: 15pt;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: .5rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondary {
+        margin: 1rem 0 0 0 !important;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .column {
+        padding: .5rem;
+    }
 }
